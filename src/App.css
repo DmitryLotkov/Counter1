@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+body{
+  background-color: #403333;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+}
+.Wrapper {
+  text-align: center;
+  width: 350px;
+  height: 300px;
+  border: 4px solid #62c6bc;
+  border-radius: 15px;
+ /* background-color: #2f8c72;*/
+  margin-top: 50px;
+  margin-right: 50px;
+
+}
+.settings{
+  text-align: center;
+ /* background-color: #2f8c72;*/
+  width: 300px;
+  height: 170px;
+  border-radius: 15px;
+  margin: 15px auto;
+  border: 4px solid #62c6bc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100%;
+}
+.header{
+  text-align: center;
+ /* background-color: #2f8c72;*/
+  width: 300px;
+  height: 170px;
+  border-radius: 15px;
+  margin: 15px auto;
+  border: 4px solid #62c6bc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 300%;
+  font-weight:bold;
+}
+.buttons{
+  border: 4px solid #62c6bc;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 300px;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
   color: white;
 }
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
 
-.App-link {
-  color: #61dafb;
+}
+.input{
+  width: 140px;
+  border: 2px solid #62c6bc;
+  border-radius: 5px;
+  color: #62c6bc;
+}
+.values{
+  margin-left: 10px;
+  width: 150px;
+  color: #62c6bc;
+  font-weight:bold;
+}
+.setButton{
+  border: 4px solid #62c6bc;
+  width: 300px;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.counterEqualMaxValue{
+  color: #8d2929;
+  font-weight:bold;
+}
+.inputError {
+  width: 140px;
+  border: 2px solid #8d2929;
+  border-radius: 5px;
+  background-color: #f1a3a3;
+}
+.inputError:focus{
+  outline: 0;
+}
+.errorDisplay{
+  color: #8d2929;
+  font-size: 70%;
+}
+.attentionMessage{
+  font-size: 70%;
+  color: #62c6bc;
+}
+.defaultDisplay{
+  color: #62c6bc
+}
+.Mui-disabled span{
+  color:#fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
